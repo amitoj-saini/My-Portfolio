@@ -1,0 +1,16 @@
+.typethis span.word {
+    display: none;
+}
+
+.input {
+    background-color: var(--secondary);
+    font-family: var(--font);
+    color: var(--color);
+    padding-left: 10px;
+    border-radius: 2.5px;
+    font-weight: 400;
+    font-size: 11px;
+    outline: none;
+    height: 25px;
+    border: none;
+}

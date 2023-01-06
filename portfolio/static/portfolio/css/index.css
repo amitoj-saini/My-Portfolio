@@ -1,0 +1,40 @@
+.window {
+    max-width: 800px;
+    background-color: var(--secondary);
+    border-radius: 5px;
+}
+
+.window-topbar {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--thirdary);
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.icons a {
+    text-decoration: none !important;
+}
+
+.icons i {
+    display: inline-block;
+    color: var(--golden);
+    transition: 0.3s;
+    font-size: 2rem;
+    padding: 10px;
+    opacity: 100%;
+    border: none;
+}
+
+.icons i:hover {
+    font-size: 2.5rem;
+}

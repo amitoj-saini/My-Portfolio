@@ -1,0 +1,48 @@
+{% load static %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/template.css' %}">
+    <link rel="stylesheet" href="{% static 'portfolio/css/style.css' %}">
+    <link rel="icon" href="{% static 'portfolio/images/logo_transparent.png' %}">
+    {% block head %}{% endblock %}
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg d-flex justify-content-center pt-4 pb-5">
+        <div class="container row align-items-center">
+            <div class="col-auto d-flex align-items-center">
+                <img class="logo d-inline" height="40" src="{% static 'portfolio/images/thick_logo_transparent.png' %}">
+                <h2 class="no-mobile-display pl-2 pr-2 h4 m-0 d-inline font-weight-bold">Amitoj 
+                    <span class="abbreviation" style="color: var(--golden)">
+                        C<span>onsultancy</span>S<span>ervices</span>
+                    </span>
+                </h2>
+                
+            </div>
+            <div class="no-mobile-display col-auto row selection-nav">
+                <div class="col-auto">
+                    <a href="#">Home</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#">About Us</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#">Blogs</a>
+                </div>
+                <div class="col-auto">
+                    <a href="#">Socials</a>
+                </div>
+                
+            </div>
+        </div>
+    </nav>
+
+    {% block body %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,68 @@
+:root {
+    --font: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    --golden: rgb(225, 198, 115);
+    --bg: rgb(232, 230, 222);
+    --color: #232526;
+    --oposite-color: white;
+    --blue: rgb(18 58 226 / 42%);
+
+    --secondary: rgb(225, 221, 202);
+    --thirdary: rgb(220, 212, 184);
+    --light-black: #2a2d2e;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --bg: rgb(20, 20, 20);
+        --color: rgb(232, 230, 222);
+        --oposite-color: #232526;
+        --blue: rgba(30, 62, 186, 0.618);
+        --secondary: rgb(30, 30, 30);
+        --thirdary: rgb(40, 40, 40);
+    }
+}
+
+body {
+    background-position: center;
+    font-family: var(--font);
+    background: var(--bg);
+    background-size: cover;
+    color: var(--color);
+}
+
+.logo {
+    border-radius: 5px;
+    background-color: var(--light-black);
+}
+
+.selection-nav a {
+    color: var(--color);    
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+.selection-nav a:hover {
+    color: var(--golden);
+}
+
+.abbreviation span {
+    display: inline-block;
+    max-width: 0;
+    opacity: 0;
+    transition: max-width 0.2s, opacity 0.2s;
+    animation: abbreviation 0.5s;
+}
+
+@keyframes abbreviation {
+    0% {
+        max-width: 180px;
+        opacity: 1;
+        transition: max-width 0.2s, opacity 0.2s;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .no-mobile-display {
+        display: none !important;
+    }
+}
