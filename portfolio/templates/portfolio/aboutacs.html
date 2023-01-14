@@ -7,7 +7,12 @@
 {% endblock %}
 
 {% block body %}
-<div style="top: 0%; left: 0%;" class="w-100 h-100 position-absolute d-flex justify-content-center align-items-center">
-    <h1 class="display-4">The One Man Company</h1>
+<div style="overflow: hidden; top: 0%; left: 0%; z-index: -1;" class="w-100 h-100 position-absolute d-flex justify-content-center align-items-center text-center">
+    <img style="bottom: 70%; right: 70%;" class="example-images" src="{% static 'portfolio/images/website2.png' %}">
+    <img style="top: 90%; left: 20%;" class="example-images" src="{% static 'portfolio/images/desktop2.png' %}">
+    <img style="bottom: 80%; left: 80%;" class="example-images" src="{% static 'portfolio/images/website3.png' %}">
+    <img style="top: 40%; left: 80%;" class="example-images" src="{% static 'portfolio/images/desktop1.png' %}">
+    <img style="top: 50%; right: 85%;" class="example-images" src="{% static 'portfolio/images/website5.png' %}">
+    <h1 class="display-4">The One Man <span style="background-image: var(--gradient-1);" class="text-gradient">Company</span></h1>
 </div>
 {% endblock %}
