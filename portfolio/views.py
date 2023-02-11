@@ -6,3 +6,6 @@ def index(request):
 
 def about_acs(request):
     return render(request, "portfolio/aboutacs.html")
+
+def blogs(request):
+    return render(request, "portfolio/blogs.html")
