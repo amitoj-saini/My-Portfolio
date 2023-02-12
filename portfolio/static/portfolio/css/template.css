@@ -13,13 +13,14 @@
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --bg: rgb(20, 20, 20);
+        --bg: rgb(0, 0, 0);
         --color: rgb(232, 230, 222);
         --oposite-color: #232526;
         --blue: rgba(30, 62, 186, 0.618);
         --secondary: rgb(30, 30, 30);
         --thirdary: rgb(40, 40, 40);
-    }
+        --light-black: transparent;
+    }    
 }
 
 body {

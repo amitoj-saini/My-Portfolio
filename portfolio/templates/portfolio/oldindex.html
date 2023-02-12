@@ -1,0 +1,72 @@
+{% extends "portfolio/template.html" %}
+{% load static %}
+{% block title %}Welcome{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'portfolio/css/index.css' %}">
+<script src="{% static 'portfolio/js/typing.js' %}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="p-lg-5 w-100 text-center my-5">
+        <div class="elavator-wrapper display-3 font-weight-bold">
+            Where We Help<br>You 
+            <span style="color: var(--golden);" class="typethis">
+                <span class="writing"></span>
+                <span class="word">Excel</span>
+                <span class="word">Learn</span>
+                <span class="word">Shine</span>
+                <span class="word">Work</span>
+                <span class="word">Think</span>
+                <span class="word">Gain</span>
+            </span>
+        </div>
+        <!--<p class="lead fw-normal">And an even wittier subheading to boot. Jumpstart your marketing efforts with this example based on Apple’s marketing pages.</p>
+        <a class="btn btn-outline-secondary" href="#">Coming soon</a>-->
+    </div>
+
+    <div class="window container p-0">
+        <div class="window-topbar m-0 w-100 row">
+            <div class="col-auto">
+                <span class="dot" style="background:#ED594A;"></span>
+                <span class="dot" style="background:#FDD800;"></span>
+                <span class="dot" style="background:#5AC05A;"></span>
+            </div>
+
+            <div class="col-8 m-auto">
+                <input class="w-100 input" placeholder="https://amitoj.ca etc... (My Socials)">
+            </div>
+        </div>
+        <div class="row container p-5 m-0 d-flex align-items-center">
+            <div class="no-mobile-display col text-center">
+                <img class="logo d-inline" width="300" src="{% static 'portfolio/images/thick_logo_transparent.png' %}">
+            </div>
+            <div class="icons col align-items-center text-center">
+                <a href="https://github.com/amitoj-saini">
+                    <i class="fa-lg bi bi-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/amitoj-saini-ab79b3221/?originalSubdomain=ca">
+                    <i class="fa-lg bi bi-linkedin"></i>
+                </a>
+                <a href="/">
+                    <i class="fa-lg bi bi-discord"></i>
+                </a>
+                <a href="/tools">
+                <i class="bi bi-nut"></i>
+                </a>
+                <a href="https://www.paypal.com/paypalme/amitojconsultancy">
+                    <i class="fa-lg bi bi-paypal"></i>
+                </a>
+
+                <a href="mailto:admin@amitoj.ca">
+                    <i class="bi bi-envelope-paper-fill"></i>
+                </a>
+                <a href="tel:289-801-2323">
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
