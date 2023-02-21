@@ -3,9 +3,43 @@
 {% block title %}Blogs{% endblock %}
 
 {% block head %}
-
+<link rel="stylesheet" href="{% static 'portfolio/css/blogs.css' %}">
 {% endblock %}
 
 {% block body %}
+<img class="centered-bg-gradient" src="{% static 'portfolio/images/gradient.png' %}">
+<div class="container w-100  text-center">
+    <div class="container p-1 mt-5">
+        <h1 class="caption">
+            <span style="background-image: var(--gradient-2);" class="text-gradient">Join Us</span>,
+            <span style="background-image: var(--gradient-6);" class="text-gradient">relax</span> 
+            <br>
+            and 
+            <span style="background-image: var(--gradient-3);" class="text-gradient">read</span>
+            our 
+            <span style="background-image: var(--gradient-5);" class="text-gradient">story</span>.
+        </h1>
+    </div>
+    <div class="row mt-5 p-1 d-flex justify-content-center">
+        {% for blog in blogs %}
+            <div class="col-6 blog-card">
+                <img src="{{blog.banner}}">
+            </div>
 
+            <div class="col-6 blog-card">
+                <img src="{{blog.banner}}">
+            </div>
+
+
+            <div class="col-6 blog-card">
+                <img src="{{blog.banner}}">
+            </div>
+
+
+            <div class="col-6 blog-card">
+                    <img src="{{blog.banner}}">
+            </div>
+        {% endfor %}
+    </div>
+</div>
 {% endblock %}

@@ -9,7 +9,7 @@ function scrollText(wordcontainers, i) {
     wordcontainer.classList += " scroll-text-animation-start";
     setTimeout(() => {
         wordcontainer.classList += " scroll-text-animation-end";
-        setTimeout(() => scrollText(wordcontainers, i+1), 300);
+        setTimeout(() => scrollText(wordcontainers, i+1), 200);
     }, 2000);
 }
 

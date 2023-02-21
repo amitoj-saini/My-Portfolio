@@ -1,0 +1,50 @@
+.centered-bg-gradient {
+    left: calc(50% - 25vh);
+    top: calc(50% - 25vh);
+    position: absolute;
+    filter: blur(99px);
+    opacity: 60%;
+    width: 50vh;
+    height: 50vh;
+}
+
+@media (prefers-color-scheme: dark) {
+    .centered-bg-gradient {
+        opacity: 35%;
+    }
+}
+
+.caption {
+    font-weight: bolder;
+    font-size: 2.5rem;
+}
+
+.caption span {
+    font-size: 3.5rem;
+}
+
+.blog-card {
+    height: 300px;
+    max-width: 450px;
+    min-width: 330px;
+}
+
+.blog-card img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+/*.blog-card {
+    
+    
+    border-radius: 10px;
+    max-width: 450px;
+    height: 350px;
+    padding: 0;
+}
+
+.blog-img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    width: 100%;
+}*/
