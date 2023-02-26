@@ -8,38 +8,14 @@
 
 {% block body %}
 <img class="centered-bg-gradient" src="{% static 'portfolio/images/gradient.png' %}">
-<div class="container w-100  text-center">
-    <div class="container p-1 mt-5">
-        <h1 class="caption">
-            <span style="background-image: var(--gradient-2);" class="text-gradient">Join Us</span>,
-            <span style="background-image: var(--gradient-6);" class="text-gradient">relax</span> 
-            <br>
-            and 
-            <span style="background-image: var(--gradient-3);" class="text-gradient">read</span>
-            our 
-            <span style="background-image: var(--gradient-5);" class="text-gradient">story</span>.
-        </h1>
-    </div>
-    <div class="row mt-5 p-1 d-flex justify-content-center">
-        {% for blog in blogs %}
-            <div class="col-6 blog-card">
-                <img src="{{blog.banner}}">
-            </div>
-
-            <div class="col-6 blog-card">
-                <img src="{{blog.banner}}">
-            </div>
-
-
-            <div class="col-6 blog-card">
-                <img src="{{blog.banner}}">
-            </div>
-
-
-            <div class="col-6 blog-card">
-                    <img src="{{blog.banner}}">
-            </div>
-        {% endfor %}
+<div class="container p-5 d-flex justify-content-center">
+    <div class="featured-post row">
+        <div class="img-col col">
+            <img src="{% static 'portfolio/blogs/ckpLKgOsnImXXOyoQZFRrcbnXNMRvz.jpg' %}">
+        </div>
+        <div class="content-col col-auto p-2">
+            <p class="fs-3 fw-bold">Upgrading to CUCM 14.0</p>
+        </div>
     </div>
 </div>
 {% endblock %}
